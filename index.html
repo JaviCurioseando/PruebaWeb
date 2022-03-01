@@ -9,6 +9,19 @@
 
 <body>
 
+  <style>
+    .btnLnk{background-color:rgb(59, 59, 240);border:2px solid rgb(0, 247, 255);color:rgb(0, 0, 0);
+        font-size:1.2em;padding:12px;
+        text-align:center;cursor:pointer;outline:0;float:center;}
+    .btnLnk:hover{background-color:#6b93e7;}
+  </style>
+
+  <div class="botonera">
+    <button class="btnLnk" onclick="javascript:void(window.open('./table.html'));" title="New Page">New page</button>
+  </div>
+
+
+
     <h1>Poema. Un jaque de Jerez</h1>
 
 
@@ -32,6 +45,12 @@
   <h3>Que al empuje del zancajo </h3>
   <h3>Hizo entrar sin gran trabajo </h3>
   <h3>A gitano y jaque en caja.</h3>
+
+  <div class="botonera">
+    <button class = "btnLnk" onclick="CreateTableFromJFROG()" title="Read Local JSON">Read Local JSON</button>
+    <p id="showData"></p>
+  </div>
+
 </body>
 </html>
 
